@@ -9,7 +9,7 @@ A quick and easy way to stop procrastinating and finish your tasks with ease.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
 
 
 ## Before Installation
