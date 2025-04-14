@@ -15,11 +15,16 @@ html, body {
 
 h1, h2, h3 {
     font-family: "Noto Serif", "Times New Roman", serif;
+    color: rgb(230, 230, 230);
+    text-align: center;
+    height: fit-content;
 }
 
 p, span {
     font-family: "Open Sans", sans;
     font-weight: 500;
+    text-align: center;
+    height: fit-content;
 }
 
 .header {
@@ -30,12 +35,6 @@ p, span {
     top: 0;
     left: 0;
     border-bottom: 1px solid rgb(230, 230, 230);
-}
-
-.header-h1 {
-    color: rgb(230, 230, 230);
-    text-align: center;
-    height: fit-content;
 }
 
 .content {
@@ -59,8 +58,7 @@ p, span {
     font-family: "Open Sans", sans;
     font-weight: 600;
     box-shadow: 0px 0px 4px 1px black;
-    transition: all;
-    transition-duration: 0.3s;
+    transition: all 125ms ease-out;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -69,7 +67,11 @@ p, span {
 }
 
 .btn:hover {
-    transform: scale(103%);
+    transform: scale(106%);
+}
+
+#blockedSitesBtn:hover {
+    background-color: rgb(200, 50, 50);
 }
 
 .block-symbol {

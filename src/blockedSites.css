@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+:root {
+    --teal-color: rgb(0, 200, 200);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,16 +18,102 @@ html, body {
 
 h1, h2, h3 {
     font-family: "Noto Serif", "Times New Roman", serif;
+    color: rgb(230, 230, 230);
+    text-align: center;
+    height: fit-content;
 }
 
 p, span {
     font-family: "Open Sans", sans;
     font-weight: 500;
+    text-align: center;
+    height: fit-content;
+}
+
+.btn {
+    padding: 15px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(50, 50, 50);
+    color: rgb(230, 230, 230);
+    font-size: 1rem;
+    font-family: "Open Sans", sans;
+    font-weight: 600;
+    box-shadow: 0px 0px 4px 1px black;
+    transition: all;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
 }
 
 .page-wrapper {
     width: 100%;
     height: 100vh;
-    padding: 3rem;
+    padding: 2rem;
     background-color: rgb(38, 38, 38);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-header {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.content {
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    width:  100%;
+    height: 85%;
+    padding: 1rem;
+    position: relative;
+}
+
+#blockedURLForm {
+    width: 100%;
+    height: fit-content;
+    padding: 0.5rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.input-text {
+    width: 70%;
+    height: 2.5rem;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    box-shadow: 0px 0px 4px 1px black;
+    z-index: 2;
+}
+
+#blockedURLFormBtn {
+    width: 10%;
+    height: 2.5rem;
+    border-radius: 0 10px 10px 0;
+    transition: background-color 300ms;
+}
+
+#blockedURLFormBtn:hover {
+    background-color: rgb(0, 150, 150)
+}
+
+.URL-wrapper {
+    width: 100%;
+    height: 87%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
 }
