@@ -13,7 +13,13 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 popup: resolve(__dirname, 'popup.html'),
+                blockedSites: resolve(__dirname, 'blockedSites.html'),
+                background: resolve(__dirname, 'src/background.js'),
             },
+            output: {
+                entryFileNames: '[name].js',
+            },
+            external: ['fsevents'],
         },
         outDir: "dist",
     },
