@@ -21,7 +21,10 @@ A quick and easy way to stop procrastinating and finish your tasks with ease.
 
 ## Installation
 
-Installation will be documented after completion of project.
+### 1. Download latest release
+Click on the latest release and then click on the first .zip file to download it.
+![Image](https://github.com/user-attachments/assets/30f812dc-d866-42ce-8aa2-1de26471da91)
+
 
 ## Authors
 
