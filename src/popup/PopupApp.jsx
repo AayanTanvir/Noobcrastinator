@@ -10,7 +10,7 @@ const PopupApp = () => {
             shadow-[0_0_8px_rgba(132,208,0,0.5)] transition duration-150 
             ease-out hover:scale-[103%]
             rounded-md mt-4 mb-2 cursor-pointer border-2
-            border-lime-500 hover:border-red-500 hover:shadow-[0_0_8px_#fb2c36]'>
+            border-lime-500 hover:border-red-500 hover: '>
                 <h1 className='text-lg font-semibold text-gray-300 text-nowrap'>Blocked Sites</h1>
             </button>
         </div>
