@@ -14,7 +14,7 @@ A quick and easy way to stop procrastinating and finish your tasks with ease.
 
 ## Before Installation
 
-- This extension is made and tested on Chrome. Support for other browsers is not yet implemented.
+- This extension is made and tested on Chrome (may work in Firefox but no guarantee). Support for other browsers is not yet tested.
 
 - The extension is not listed on the Chrome Web Store because I intended it to be a personal project. I assure you that this extension has no malware nor does it steal any data from your device.
 
