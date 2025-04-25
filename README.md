@@ -23,7 +23,25 @@ A quick and easy way to stop procrastinating and finish your tasks with ease.
 
 ### 1. Download latest release
 Click on the latest release and then click on the first .zip file to download it.
+
 ![Image](https://github.com/user-attachments/assets/30f812dc-d866-42ce-8aa2-1de26471da91)
+
+### 2. Extract ZIP
+Extract the zip file by right clicking it and then selecting "Extract Here"
+
+### 3. Upload to Chrome
+Open the extension manager:
+
+![Image](https://github.com/user-attachments/assets/954e6b97-37ef-44d0-8428-9423fa42439a)
+
+Enable Developer Mode and click the load unpacked button and then select your extracted folder:
+
+![Image](https://github.com/user-attachments/assets/a9efb15d-96e4-42d4-8be1-5e9167761fbb)
+
+### Done!
+Click the extension icon in the top right corner and click the extension to get started!
+
+If you encounter any errors or have any suggestions feel free to email me at k98778376@gmail.com
 
 
 ## Authors
