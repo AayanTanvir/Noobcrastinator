@@ -1,23 +1,4 @@
 import Browser from "webextension-polyfill";
-    
-const validateURL = (url) => {
-    url = url.trim().toLowerCase();
-    if (!url.includes(".")) {
-        return null;
-    }
-
-    try {
-        const parsedURL = new URL(url);
-        return parsedURL.href;
-    } catch (error) {
-        try {
-            const parsedURL = new URL(`https://${url}`);
-            return parsedURL.href;
-        } catch (error) {
-            return null;
-        }
-    }
-}
 
 
 const messageHandlers = {
@@ -30,15 +11,6 @@ const messageHandlers = {
             sendResponse({ success: false });
         });
     },
-    blockURL: (msg, sendResponse) => {
-        if (msg.url) {
-            const url = validateURL(msg.url);
-            //add logic to add url to storage and block the site
-            sendResponse({ success: true });
-        } else {
-            sendResponse({ success: false });
-        }
-    }
 }
 
 Browser.runtime.onMessage.addListener((msg, sender, sendResponse) => {
