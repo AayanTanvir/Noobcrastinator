@@ -39,7 +39,7 @@ Enable Developer Mode and click the load unpacked button and then select your ex
 ![Image](https://github.com/user-attachments/assets/a9efb15d-96e4-42d4-8be1-5e9167761fbb)
 
 ### Done!
-Click the extension icon in the top right corner and click the extension to get started!
+Click the extension icon in the top right corner and click the extension to get started! Keep in mind that you need to keep developer mode on for the extension to run. Developer mode enables chrome to install and run extensions directly from your machine instead of the chrome web store.
 
 If you encounter any errors or have any suggestions feel free to email me at k98778376@gmail.com
 
