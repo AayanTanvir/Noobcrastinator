@@ -66,16 +66,6 @@ const BlockedSitesApp = () => {
         }
     }
 
-    const handleUnblockSite = (site) => {
-        const updatedBlockedSites = blockedSites.filter((blockedSite) => blockedSite !== site);
-        setBlockedSites(updatedBlockedSites);
-        Browser.storage.local.set({ blockedSites: updatedBlockedSites })
-        .catch((error) => {
-            alert("Error updating blocked sites. Please try again.");
-            console.error("Error updating blocked sites:", error);
-        });
-    }
-
     return (
         <div className='w-full h-full absolute top-0 left-0 flex flex-col items-center justify-start p-2 gap-2'>
             <h1 className='text-3xl cursor-default'><span className='text-lime-400'>Noob</span>crastinator</h1>
@@ -89,13 +79,8 @@ const BlockedSitesApp = () => {
                 </form>
                 <div className='w-full flex-1 flex flex-col items-center justify-start gap-2 mt-4 p-4'>
                     {blockedSites.length > 0 && blockedSites.map((site, index) => (
-                        <div key={index} className='w-full h-[2rem] flex justify-between items-center border-red-500 shadow-[0_0_4px_#fb2c36] rounded-full px-5 transition duration-300 ease-out hover:scale-[102%]'>
+                        <div key={index} className='w-full h-[2rem] flex justify-start items-center border-red-500 shadow-[0_0_4px_#fb2c36] rounded-full px-5 transition duration-300 ease-out hover:scale-[102%]'>
                             <p className='text-gray-200 font-semibold cursor-default'>{site}</p>
-                            <div className='h-full w-fit'>
-                                <button onClick={() => {handleUnblockSite(site)}} className='bg-neutral-800 hover:bg-lime-300 hover:text-neutral-800 text-gray-300 font-semibold h-full w-[4rem] cursor-pointer transition duration-200 ease-out'>
-                                    Unblock
-                                </button>
-                            </div>
                         </div>
                     ))}
                     {blockedSites.length === 0 && <h1 className='text-gray-300 text-3xl mt-10'>You haven't blocked anything...</h1>}
